@@ -13,10 +13,13 @@
       "scrypted-package-json": "scrypted-package-json"
    },
    "scrypted": {
-      "name": "TypeScript Light",
-      "type": "Light",
+      "name": "TypeScript Sensors",
+      "type": "Sensor",
       "interfaces": [
-         "OnOff"
+         "VOCSensor",
+         "NOXSensor",
+         "AirQualitySensor",
+         "PM10Sensor"
       ]
    },
    "dependencies": {
@@ -24,6 +27,6 @@
       "axios": "^0.24.0"
    },
    "devDependencies": {
-      "@scrypted/sdk": "^0.0.199"
+      "@scrypted/sdk": "0.1.8"
    }
 }
