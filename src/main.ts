@@ -1,4 +1,4 @@
-import { ScryptedInterfaceProperty, AirQuality, AirQualitySensor, NOXSensor, PM10Sensor, ScryptedDeviceBase, VOCSensor } from '@scrypted/sdk';
+import { AirQuality, AirQualitySensor, NOXSensor, PM10Sensor, ScryptedDeviceBase, VOCSensor } from '@scrypted/sdk';
 
 class TestSensor extends ScryptedDeviceBase implements VOCSensor, NOXSensor, AirQualitySensor, PM10Sensor {
     constructor(nativeId: string) {
